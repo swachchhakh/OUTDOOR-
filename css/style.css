@@ -1,0 +1,557 @@
+html,body,header,.view,.explore2, .explore-content  {
+	height: 100%;
+}
+
+
+.nav-link{
+  font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    margin-left: 8px;
+    
+  
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.outdoor{
+	font-size: 25px ;
+}
+.nav-link{
+	position: relative;
+	z-index: 1;
+}
+
+
+.nav-link::after{
+	 content: "";
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    top: 8%;
+    left: 1%;
+    z-index: -1;
+    background-color: #DC3545;
+    transform-origin: center;
+   transform: scale(0);
+   transition: transform 0.3s ease-in-out;
+
+}
+.nav-link:hover::after{
+	transform: scale(1);
+	
+	
+}
+
+header{
+	background-image: url(../images/adventure-clouds-daylight-705075.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	
+}
+header::before{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #000000a1;
+ top: 0;
+ left: 0;
+}
+
+.full-bg-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	text-align: center;
+}
+.full-bg-img h1{
+	font-size: 80px;
+}
+
+.explore h3{
+	position: relative;
+    font-family: 'Pacifico', cursive;
+    
+    
+ 
+}
+
+.explore h3::after{
+	content: " ";
+	width: 100%;
+	height: 5px;
+	position: absolute;
+    
+	background-color: #fff;
+	
+	transform-origin: center;
+	transition: 0.4s ease all;
+	-webkit-transition: .4s ease all;
+	left: 0%;
+    top: 55px;;
+	
+	transform: scale(0);
+}
+.explore h3:hover::after{
+	
+    transform: scale(1);
+    
+    
+
+
+}
+
+
+.full-bg-img button{
+	margin-top: 20px;
+
+	
+	
+}
+
+
+.quote{
+
+
+	text-align: center;
+	background-color: #fff;
+    padding: 45px 0;
+    font-size: 25px;
+
+}
+.quote-poet{
+	font-family: 'Shadows Into Light', cursive;
+
+}
+.quote i {
+	font-size: 30px;
+	color: #dc3545;
+}
+.events{
+	padding: 50px 0;
+
+	
+}
+.events h1{
+	text-align: center;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 60px;
+	
+}
+.events h1::after{
+	content: " ";
+	width: 25%;
+	height: 5px;
+	position: absolute;
+    background-color: #dc3545;
+	transform-origin: center;
+	transition: 0.4s ease all;
+	text-align: center;
+	transition: transform 0.5s ease-in-out;
+	left: 37%;
+	
+    top: 55px;;
+	transform: scale(0);
+}
+.events h1:hover::after{
+	transform: scale(1);
+}
+/****
+.events span{
+	width: 90px;
+	height: 10px;
+	display: block;
+	margin: 0 auto;
+	background-color: #28a745;
+	margin-bottom: 50px;
+
+}
+****/
+.box{
+	 
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+
+}
+
+
+.box:hover .overlay img{
+	transform: scale(1.5);
+	transition: transform 0.5s ease-in-out;
+	
+}
+.box .mask{
+	position: absolute;
+   
+    background-color: #000000a1;
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    width: 100%;
+    transform: scale(0);
+
+    
+   
+}
+.mask h4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	
+	transform: translate(-50%,-50%);
+}
+
+.box:hover .mask{
+	 transform: scale(1);
+	 transition: transform 0.5s ease-in-out;
+	 
+}
+.content h2{
+	text-transform: uppercase;
+	
+	margin-top: 20px;
+	text-align: center;
+}
+.content p{
+	text-align: center;
+}
+.content a{
+	text-decoration: none;
+}
+.content h4{
+	
+	text-align: center;
+	color: #dc3545;
+
+}
+.explore2{
+	background-image: url(../images/adventure-beauty-dolomites-951076.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	
+
+}
+.explore2::before{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #000000a1;
+ top: 0;
+ left: 0;
+}
+.explore-content{
+	height: 100%;
+	position: absolute;
+	top: 20%;
+	color: #fff;
+	display: block;
+
+}
+.explore-content p{
+	    width: 28%;
+    font-size: smaller;
+    text-align: justify;
+}
+.explore-content h1{
+    font-size: 60px;
+}
+.explore-content span{
+	width: 120px;
+	height: 10px;
+	display: block;
+	background-color: #dc3545;
+	margin-bottom: 20px;
+}
+.explore-content a{
+	text-decoration: none;
+	color: #dc3545;
+}
+.follow{
+	text-align: center;
+	margin: 30px 0;
+	z-index: 1;
+	position: relative;
+	 transition: transform 0.7s ease-in-out;
+}
+.follow::before{
+     content: "";
+    position: absolute;
+    width: 20%;
+    height: 55px;
+    top: 0px;
+    left: 40%;
+    z-index: -1;
+    background-color: #DC3545;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+   transform: scale(0);
+}
+.follow:hover::before{
+	transform: scale(1);
+	
+
+}
+.follow:hover{
+	color: #fff;
+
+	
+
+}
+.social{
+	background-color: #e8ebeb;
+    padding: 50px 0;
+}
+
+
+.social-media{
+	display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    flex-wrap: wrap;
+font-size: 80px;}
+.facebook a{
+	color: #4267B2;
+	 
+}
+.youtube a{
+	color: #FF0000;
+	
+}
+.twitter a{
+	color: #1DA1F2;
+}
+.linkedin{
+	color: #0077B5;
+}
+.gallery{
+	background-image: url(../images/adventure-daylight-desert-6496.jpg);
+	max-height: 1200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center fixed;
+
+}
+
+.gl h1{
+	text-align: center;
+	margin: 50px 0;
+	position: relative;
+	z-index: 1;
+
+	
+}
+.gl h1::after{
+	 content: "";
+    position: absolute;
+    width: 20%;
+    height: 55px;
+    top: 0px;
+    color: #fff;
+    left: 40%;
+    z-index: -1;
+    background-color: #DC3545;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+
+}
+.gl h1:hover::after {
+	transform: scale(1);
+	
+	color: #fff;
+}
+
+
+.gallery .col-md-6{
+
+}
+.bd-example{
+	padding: 50px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+.start-somewhere{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.g-content{
+	          color:#fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 90px;
+   
+    
+   
+   
+
+}
+
+
+.destination{
+	margin: 50px 0;
+}
+.destination p{
+	    text-align: justify;
+    margin: 15px 0;
+    margin-right: 120px;
+    
+}
+
+
+
+.destination h1::after{
+	    content: " ";
+    width: 78%;
+    height: 5px;
+    position: absolute;
+    background-color: #dc3545;
+    transform-origin: center;
+    transition: 0.4s ease all;
+    text-align: center;
+    -webkit-transition: .4s ease all;
+    left: 5px;
+    top: 55px;
+    transform: scale(0);
+}
+.destination h1:hover::after{
+	transform: scale(1);
+}
+
+.fit-image{
+	padding: 10px;
+	
+}
+.row{
+	position: relative;
+}
+#overlay::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: bottom;
+	background-color: #00000096;
+	transform: scale(0);
+}
+ #overlay:hover::before{
+	transform: scale(1);
+	transition: 0.4s all ease;
+}
+#overlay h3{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	color: #fff;
+	transform-origin: bottom;
+	left: 5%;
+	transform: scale(0);
+
+}
+#overlay:hover h3{
+	transform: scale(1);
+	transition: transform 0.5s ease-in-out;
+} 
+.contact{
+	margin: 50px 0;
+}
+
+form{
+	display: block;
+}
+fa-user{
+	    position: absolute;
+    top: 12px;
+    left: 5px;
+    font-size: 25px;
+}
+input[type="text"]{
+	width: 100%;
+    padding: 0 20px;
+    height: 53px;
+    border: none;
+    border-bottom: 1px solid #b7b0b0b0;
+}
+
+
+
+
+input[type="password"]{
+	width: 100%;
+    padding: 0 20px;
+    height: 53px;
+    border: none;
+    border-bottom: 1px solid #b7b0b0b0;
+}
+
+.fname,.last,.email,.pass{
+	position: relative;
+}
+.fname i,.last i ,.email i,.pass i{
+	position: absolute;
+    top: 19px;
+    right: 97%;
+}
+.sign-up{
+	position: relative;
+}
+.sign-up{
+	position: absolute;
+	top: 45%;
+	left: 20%;
+	transform: (-50%,-50%);
+	text-transform: uppercase;
+	font-size: 73px;
+}
+.sign-up::after{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 100px;
+	/* display: block; */
+	top: -5%;
+	left: -25px;
+	z-index: -1;
+	background-color: #dc3545;
+	transform-origin: center;
+	border-radius: 10px;
+	transform: scale(0);
+	transition: transform 0.5s ease-in-out;
+}
+.sign-up:hover::after{
+
+	transform: scale(1);
+}
+.sign-up:hover{
+	color: #fff;
+}
+
+
+
+
+

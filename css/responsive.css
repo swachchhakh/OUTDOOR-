@@ -1,0 +1,162 @@
+@media(max-width:1220px ){
+	.container{
+       max-width: 1160px;
+	}
+	
+	.full-bg-img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+	.full-bg-img h1{
+	font-size: 50px;
+}
+
+.explore h3{
+	position: relative;
+    font-family: 'Pacifico', cursive;
+    
+    
+ 
+}
+
+.explore h3::after{
+	content: " ";
+	width: 100%;
+	height: 5px;
+	position: absolute;
+    
+	background-color: #fff;
+	
+	transform-origin: center;
+	transition: 0.4s ease all;
+	-webkit-transition: .4s ease all;
+	left: 0%;
+    top: 55px;;
+	
+	transform: scale(0);
+}
+.explore h3:hover::after{
+	
+    transform: scale(1);
+    
+    
+
+
+}
+
+
+.full-bg-img button{
+	margin-top: 20px;
+
+	
+	
+}
+}
+@media(max-width: 991px ){
+	.navbar-nav{
+		    background-color: #0000009c;
+    width: 20%;
+	}
+	.nav-link:hover::after{
+	transform: scale(0);
+	
+	
+}
+.follow:hover::before{
+	transform: scale(0);
+}
+.follow:hover{
+	color: black;
+
+	
+
+}
+.explore-box{
+		font-size: 13px;
+	}
+	.explore-content h1 {
+    font-size: 40px;
+}
+
+	.explore-content h4 {
+    font-size: 18px;
+}
+}
+@media(max-width: 768px ){
+	.explore-box{
+		font-size: 12px;
+	}
+	.explore-content h1 {
+    font-size: 30px;
+}
+
+	.explore-content h4 {
+    font-size: 18px;
+}
+
+}
+
+@media(max-width: 576px ){
+	.explore-box{
+		font-size: 10px;
+	}
+	.explore-content h1 {
+    font-size: 30px;
+}
+
+	.explore-content h4 {
+    font-size: 15px;
+}
+}
+@media(max-width:700px){
+	.gl h1 {
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+}
+.gl h1::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    top: 0px;
+    color: #fff;
+    left: 40%;
+    z-index: -1;
+    background-color: #DC3545;
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.sign-up {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    transform: (-50%,-50%);
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.sign-up::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 60px;
+    /* display: block; */
+    top: 10%;
+    left: -25px;
+    z-index: -1;
+    background-color: #dc3545;
+    transform-origin: center;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+}
